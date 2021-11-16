@@ -9,7 +9,7 @@ import SwiftUI
 import simd
 
 public struct TYColor {
-    static func random() -> TYColor {
+    public static func random() -> TYColor {
         TYColor(red: Double.random(in: 0...1), green: Double.random(in: 0...1), blue: Double.random(in: 0...1))
     }
     
