@@ -18,11 +18,14 @@ public struct TYColor {
     public var green: Double
     public var alpha: Double
     
+    public var mtlClearColor: MTLClearColor {
+        MTLClearColor(red: red, green: green, blue: blue, alpha: alpha)
+    }
     public var uiColor: UIColor {
         UIColor(red: red, green: green, blue: blue, alpha: alpha)
     }
     @available(iOS 13.0, *)
-    public var cgColorTYColor: CGColor {
+    public var cgColor: CGColor {
         CGColor(red: red, green: green, blue: blue, alpha: alpha)
     }
     @available(iOS 13.0, *)
